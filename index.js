@@ -12,7 +12,8 @@ module.exports = {
             //var matchthingy =  $('ul.summary > li.active').children().text();
             
 
-            page.content = $.html() + "<h1>Any old crap.</h1>"; //+ matchthingy.html();
+            //page.content = $.html() + "<h1>Any old crap.</h1>"; //+ matchthingy.html();
+            page.content = page.content + "<h1>Any old crap.</h1>"; //+ matchthingy.html();
             return page;
             }
 
