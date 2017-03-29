@@ -9,10 +9,10 @@ module.exports = {
         "page:after": function(page) {
 
             var $ = cheerio.load(page.content);
-            var matchthingy =  $('ul.summary > li.active').children().text();
+            //var matchthingy =  $('ul.summary > li.active').children().text();
             
 
-            page.content = $.html() + "<h1>Any old crap.</h1>" + matchthingy.html();
+            page.content = $.html() + "<h1>Any old crap.</h1>"; //+ matchthingy.html();
             return page;
             }
 
