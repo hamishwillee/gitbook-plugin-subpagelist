@@ -18,10 +18,10 @@ module.exports = {
               // Write a file in the output folder
               //output.writeFile('hello.txt', matchthingy);
             
-              //$('.search-noresults').append('<p>THIS IS SOME RANDOM TEXT</p>');
+              $('.search-noresults').append('<p>THIS IS SOME RANDOM TEXT</p>');
             
 
-              //page.content = $.html()
+              page.content = $.html()
               page.content = page.content.replace("Title", "FISH");
               
               
