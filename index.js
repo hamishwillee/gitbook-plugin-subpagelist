@@ -10,14 +10,15 @@ module.exports = {
                return page;
            },
             
-            "page:after": function(page) {
+           "page:after": function(page) {
 
-            //var $ = cheerio.load(page.content);
-            //var matchthingy =  $('ul.summary > li.active').children().text();
+             var $ = cheerio.load(page.content);
+             var matchthingy =  $('ul.summary > li.active').children().text();
+            
+             $('.body-inner').append('<p>THIS IS SOME RANDOM TEXT</p>')
             
 
-            //page.content = $.html() + "<h1>Any old crap.</h1>"; //+ matchthingy.html();
-            page.content = "XXXXXXX"+ page.content + "YYYYY"; //+ matchthingy.html();
+            page.content = $.html()
             return page;
             }
 
