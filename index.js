@@ -18,7 +18,7 @@ module.exports = {
               // Write a file in the output folder
               //output.writeFile('hello.txt', matchthingy);
             
-              $('.search-noresults').append('<p>THIS IS SOME RANDOM TEXT</p>');
+              $('.markdown-section').append('<p>THIS IS SOME RANDOM TEXT</p>');
               $('ul').append('<li class = "plum">Plum</li>')
             
 
