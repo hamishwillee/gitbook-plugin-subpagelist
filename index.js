@@ -20,8 +20,8 @@ module.exports = {
               //$('.page-inner').remove();
               //$('section').append('<p>THIS IS SOME RANDOM TEXT</p>');
               //$('ul').append('<li class = "plum">Plum</li>');
-              $('p').append('XX');
-            
+              $('p').append('<a href="#">XX</a>');
+              $('p').append('<a href="#">YY</a>');
 
               page.content = $.html()
               page.content = page.content.replace("Title", "22FISH");
