@@ -19,7 +19,9 @@ module.exports = {
               //output.writeFile('hello.txt', matchthingy);
             
               $('section').append('<p>THIS IS SOME RANDOM TEXT</p>');
-              $('ul').append('<li class = "plum">Plum</li>')
+              $('ul').append('<li class = "plum">Plum</li>');
+              $('.page-inner').remove();
+              
             
 
               page.content = $.html()
