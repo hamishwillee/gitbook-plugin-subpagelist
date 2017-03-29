@@ -12,14 +12,15 @@ module.exports = {
             
            "page:after": function(page) {
 
-             var $ = cheerio.load(page.content);
-             //var matchthingy =  $('ul.summary > li.active').children().text();
+              var $ = cheerio.load(page.content);
+              var matchthingy =  $('ul.summary > li.active').children().text();
+              console.log(matchthingy);
             
-             $('.body-inner').append('<p>THIS IS SOME RANDOM TEXT</p>');
+              $('.search-noresults').append('<p>THIS IS SOME RANDOM TEXT</p>');
             
 
-            page.content = $.html()
-            return page;
+              page.content = $.html()
+              return page;
             }
 
         
