@@ -21,11 +21,11 @@ module.exports = {
               $('section').append('<p>THIS IS SOME RANDOM TEXT</p>');
               $('ul').append('<li class = "plum">Plum</li>');
               $('.page-inner').remove();
-              
+              $('p').append('XX');
             
 
               page.content = $.html()
-              page.content = page.content.replace("Title", "FISH");
+              page.content = page.content.replace("Title", "2FISH");
               
               
               return page;
