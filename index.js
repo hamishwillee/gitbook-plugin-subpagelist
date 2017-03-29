@@ -4,16 +4,20 @@ module.exports = {
     // Map of hooks
     hooks: {
         
-          ///
-                  // Requires an unhealthy knowledge of the generated template...
-        "page:after": function(page) {
+
+           "page:before": function(page) {
+               page.content = page.content + "\n# Title\n" 
+               return page;
+           },
+            
+            "page:after": function(page) {
 
             //var $ = cheerio.load(page.content);
             //var matchthingy =  $('ul.summary > li.active').children().text();
             
 
             //page.content = $.html() + "<h1>Any old crap.</h1>"; //+ matchthingy.html();
-            page.content = page.content + "<p>Any old crap.</p>"; //+ matchthingy.html();
+            page.content = "XXXXXXX"+ page.content + "YYYYY"; //+ matchthingy.html();
             return page;
             }
 
