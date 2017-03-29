@@ -8,12 +8,12 @@ module.exports = {
                   // Requires an unhealthy knowledge of the generated template...
         "page:after": function(page) {
 
-            var $ = cheerio.load(page.content);
+            //var $ = cheerio.load(page.content);
             //var matchthingy =  $('ul.summary > li.active').children().text();
             
 
             //page.content = $.html() + "<h1>Any old crap.</h1>"; //+ matchthingy.html();
-            page.content = page.content + "<h1>Any old crap.</h1>"; //+ matchthingy.html();
+            page.content = page.content + "<p>Any old crap.</p>"; //+ matchthingy.html();
             return page;
             }
 
