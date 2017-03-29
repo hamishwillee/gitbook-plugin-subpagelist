@@ -17,14 +17,14 @@ module.exports = {
               //console.log(matchthingy);
               // Write a file in the output folder
               //output.writeFile('hello.txt', matchthingy);
-              $('.page-inner').remove();
+              //$('.page-inner').remove();
               //$('section').append('<p>THIS IS SOME RANDOM TEXT</p>');
               //$('ul').append('<li class = "plum">Plum</li>');
-              //$('p').append('XX');
+              $('p').append('XX');
             
 
               page.content = $.html()
-              page.content = page.content.replace("Title", "2FISH");
+              page.content = page.content.replace("Title", "22FISH");
               
               
               return page;
