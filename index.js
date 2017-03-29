@@ -19,6 +19,7 @@ module.exports = {
               //output.writeFile('hello.txt', matchthingy);
             
               $('.search-noresults').append('<p>THIS IS SOME RANDOM TEXT</p>');
+              $('ul').append('<li class = "plum">Plum</li>')
             
 
               page.content = $.html()
