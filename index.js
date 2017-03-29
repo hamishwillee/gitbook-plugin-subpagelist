@@ -12,7 +12,7 @@ module.exports = {
             
            "page": function(page) {
 
-              //var $ = cheerio.load(page.content);
+              var $ = cheerio.load(page.content);
               //var matchthingy =  $('ul.summary > li.active').children().text();
               //console.log(matchthingy);
               // Write a file in the output folder
