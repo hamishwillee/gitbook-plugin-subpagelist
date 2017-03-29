@@ -13,9 +13,9 @@ module.exports = {
            "page:after": function(page) {
 
              var $ = cheerio.load(page.content);
-             var matchthingy =  $('ul.summary > li.active').children().text();
+             //var matchthingy =  $('ul.summary > li.active').children().text();
             
-             $('.body-inner').append('<p>THIS IS SOME RANDOM TEXT</p>')
+             $('.body-inner').append('<p>THIS IS SOME RANDOM TEXT</p>');
             
 
             page.content = $.html()
