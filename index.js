@@ -17,11 +17,10 @@ module.exports = {
               //console.log(matchthingy);
               // Write a file in the output folder
               //output.writeFile('hello.txt', matchthingy);
-            
-              $('section').append('<p>THIS IS SOME RANDOM TEXT</p>');
-              $('ul').append('<li class = "plum">Plum</li>');
               $('.page-inner').remove();
-              $('p').append('XX');
+              //$('section').append('<p>THIS IS SOME RANDOM TEXT</p>');
+              //$('ul').append('<li class = "plum">Plum</li>');
+              //$('p').append('XX');
             
 
               page.content = $.html()
