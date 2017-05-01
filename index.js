@@ -1,4 +1,4 @@
-var cheerio = require('cheerio');
+
 
 module.exports = {
     // Map of hooks
@@ -7,24 +7,13 @@ module.exports = {
 
            "page:before": function(page) {
                page.content = page.content + "\n# Title\n" 
+               console.log('PAGE BEFORE');
                return page;
            },
             
            "page": function(page) {
 
-              var $ = cheerio.load(page.content);
-              //var matchthingy =  $('ul.summary > li.active').children().text();
-              //console.log(matchthingy);
-              // Write a file in the output folder
-              //output.writeFile('hello.txt', matchthingy);
-              //$('.page-inner').remove();
-              //$('section').append('<p>THIS IS SOME RANDOM TEXT</p>');
-              //$('ul').append('<li class = "plum">Plum</li>');
-              $('p').append('<a href="#">XX</a>');
-              $('p').append('<a href="#">YY</a>');
-
-              page.content = $.html()
-              page.content = page.content.replace("Title", "22FISH");
+             console.log('PAGE');
               
               
               return page;
